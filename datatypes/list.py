@@ -119,3 +119,38 @@ length=length_hint(slicedList)
 print(length)
 #or
 print(len(slicedList))
+
+
+#Concatenate add 
+
+test_list1 = [1, 4, 5, 6, 5]
+test_list2 = [3, 5, 7, 2, 5]
+for i in test_list2 :
+    test_list1.append(i) 
+    
+print(test_list1) 
+
+test_list1 = [1, 4, 5, 6, 5]
+test_list2 = [3, 5, 7, 2, 5]
+# Python 3 code to demonstrate list
+# concatenation using + operator
+test_list3=test_list1+test_list2
+print(test_list3) 
+
+#using extend
+test_list2.extend(test_list1)
+print(test_list2)
+
+  
+# using * operator to concat
+res_list = [*test_list1, *test_list2]
+print(res_list)
+
+# concatenation using itertools.chain()
+import itertools
+
+test_list1 = [1, 4, 5, 6, 5]
+test_list2 = [3, 5, 7, 2, 5]
+iterList = list(itertools.chain(test_list1, test_list2))
+print(iterList)
+
